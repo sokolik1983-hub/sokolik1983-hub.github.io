@@ -1,0 +1,21 @@
+@font-face {
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-family: Roboto-Medium;
+}
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: Roboto-Regular;
+}
+@font-face {
+  src: url("../fonts/Roboto-Light.ttf");
+  font-family: Roboto-Light;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
