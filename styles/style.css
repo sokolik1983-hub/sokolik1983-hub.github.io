@@ -76,7 +76,8 @@ ul {
     margin: 0 auto;
     background-color: rgba(35, 35, 35, .7);
     position: absolute;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
+    overflow: hidden;
 }
 .content__inner {
     width: 100%;
