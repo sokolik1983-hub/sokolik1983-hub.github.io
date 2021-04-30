@@ -1,649 +1,431 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novoc2</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.css">
-
-
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио Соколов А.А.</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/portrait.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
+<ul class="main-menu">
+    <li >
+        <p data-value="1">Обо мне</p>
+    </li>
+    <li >
+        <p data-value="2" class="d-none">React projects</p>
+    </li>
+    <li >
+        <p data-value="3" class="icon-text2">Native JS</p>
+    </li>
+    <li >
+        <p data-value="4">Мои сайты</p>
+    </li>
+</ul>
+<a href="#" class="back-link">
+    <p>Назад</p>
+</a>
 
-<header>
-    <div class="header__top">
-        <div class="container header__container">
-            <div class="header__logo">
-                <img src="images/logo.png" alt="logo" class="header__img">
-            </div>
-            <div class="header__wrap">
-                <p class="header__text header__text--bold">Агенство недвижимости</p>
-                <p class="header__text">
-                    <img src="images/metro-logo-vector-light%20copy%204.png" alt="metro-logo" class="header__icon">
-                    Москва, Беляево, ул. Миклухо Маклая, д. 43 </p>
-            </div>
-            <div class="header__wrap">
-                <div class="header__wrap">
-                    <p class="header__text header__text--bold">+7 (495) 276-03-03</p>
-                    <p class="header__text">Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</p>
-                </div>
-            </div>
-            <a href="#" class="btn">Бесплатная консультация</a>
-        </div>
-    </div>
-    <div class="header__bottom">
-        <div class="container header__container">
-            <ul class="header__menu">
-                <li class="header__item"><a href="#" class="header__link header__link--border pl-0">новостройки</a></li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">элитная недвижимость</a>
-                </li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">вторичная
-                    недвижимость</a></li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">коммерческая
-                    недвижимость</a></li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">ипотека</a></li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">услуги</a></li>
-                <li class="header__item"><a href="#" class="header__link header__link--border">контакты</a></li>
-                <li class="header__item header__item--icon">
-                    <div class="header__box">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="header__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M10.8743 9.64467L13.7599 12.5773C14.08 12.9027 14.08 13.4303 13.7599 13.756C13.5999 13.9187 13.39 14 13.18 14C12.9701 14 12.7602 13.9187 12.6002 13.7553L9.71461 10.8227C9.70941 10.8174 9.70505 10.8116 9.7007 10.8058C9.69737 10.8013 9.69404 10.7969 9.69034 10.7927C8.60407 11.6783 7.28493 12.1233 5.96448 12.1233C4.43806 12.1233 2.91164 11.5317 1.74699 10.348C-0.582329 7.98067 -0.582329 4.14267 1.74699 1.77533C2.91164 0.591667 4.43806 0 5.96448 0C7.4909 0 9.01732 0.591667 10.182 1.77533C12.2771 3.90467 12.4815 7.22067 10.8074 9.58933C10.8142 9.5948 10.821 9.60006 10.8278 9.60531C10.8439 9.61766 10.8598 9.62993 10.8743 9.64467ZM2.9064 9.16967C3.7234 9.99967 4.80934 10.457 5.96448 10.457C7.11963 10.457 8.20557 9.99967 9.02257 9.16967C10.7087 7.456 10.7087 4.66767 9.02257 2.954C8.20557 2.124 7.11963 1.66667 5.96448 1.66667C4.80934 1.66667 3.72307 2.124 2.9064 2.954C1.22025 4.66767 1.22025 7.456 2.9064 9.16967Z"
-                                  fill="#74CFB7"></path>
-                        </svg>
+<a href="./img/Соколов(фронтенд).pdf" target="_blank" class="print">
+    <svg enable-background="new 0 0 25 25" height="25px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px"
+         xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/>
+        <circle cx="43" cy="21" r="2"/>
+        <path d="M40,15V1H10v14" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+              stroke-width="2"/>
+        <path d="M40,29v20H10V29H40z" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+              stroke-width="2"/>
+        <path d="M10,40H3  c-1.104,0-2-0.896-2-2V17c0-1.104,0.896-2,2-2h44c1.104,0,2,0.896,2,2v21c0,1.104-0.896,2-2,2h-7"
+              fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="35" x2="15"
+              y1="35" y2="35"/>
+        <line fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="31" x2="15"
+              y1="39" y2="39"/>
+        <line fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="35" x2="15"
+              y1="43" y2="43"/></svg>
+    <p>Резюме для печати</p>
+</a>
 
-                    </div>
-                </li>
+<canvas id="canvas"></canvas>
+<div class="content">
+    <div class="content__inner content__about d-none">
+        <div class="content__info">
+            <h2>Обо мне</h2>
+            <p>Здравствуйте. Меня зовут Алексей и я front-end разработчик.</p>
+            <p>Я уже 2 года занимаюсь Web разработкой, сначала это была просто вёрстка
+                и многочисленные макеты из Фигмы и Фотошопа, около года назад начал
+                изучать JavaScript и написал несколько проектов (с ними вы можете
+                ознакомиться в разделе "Native JS"). Также сделал несколько многостраничных сайтов (вы можете их посмотреть в разделе "Мои сайты") Сейчас занимаюсь изучением React и пишу
+                проект. В дальнейшем планирую развиваться в сфере IT-технологий.</p>
+            <h3>Мои навыки</h3>
+            <ul>
+                <li>JavaScript (ES6)</li>
+                <li>React/Redux (базовый)</li>
+                <li>HTML/ CSS</li>
+                <li>Yarn/NPM</li>
+                <li>PHP(базовый)</li>
+                <li>jQuery</li>
+                <li>Bitrix/Wordpress/Joomla</li>
             </ul>
         </div>
-    </div>
-</header>
-<main>
-    <section class="promo">
-        <div class="btn__vertical t-227">
-            <img src="images/phone%20icon.svg" alt="icon" class="btn__img">
-            <p class="btn__vertical-text m-0">Обратный звонок</p>
-        </div>
-        <div class="btn__vertical t-295">
-            <img src="images/calendar.svg" alt="icon" class="btn__img">
-            <p class="btn__vertical-text m-0">Записаться на показ</p>
-        </div>
-        <div class="container promo__container">
-            <h1 class="promo__title">Купить квартиру в новостройке</h1>
-            <div class="promo__search-room">
-                <form action="index.html" class="promo__form m-0">
-                    <div class="promo__wrap mb-20">
-                        <div class="promo__box">
-                            <p class="promo__text m-0">Стоимость, млн. руб.</p>
-                            <input type="text" class="js-range-slider" name="my_range" value="" id="my_range"/>
-                            <label for="my_range"></label>
-                        </div>
-                        <div class="promo__inner">
-                            <div class="promo__wrap mb-11"><input type="radio" name="region" value="Moscow" id="Moscow"
-                                                                  class="promo__radiobox m-0">
-                                <label for="Moscow" class="promo__label ml-22">Москва и Новая Москва</label></div>
-                            <div class="promo__wrap">
-                                <input type="radio" name="region" value="Moscow-region" id="Moscow-region"
-                                       class="promo__radiobox m-0">
-                                <label for="Moscow-region" class="promo__label ml-22">Московская область</label>
-                            </div>
-                        </div>
+        <div class="content__img">
+            <div class="content__img-wrap">
+                <div class="wrapper">
+                    <div class="frame">
+                        <img src="/img/silhoette.png" alt="img" class="silhoette">
                     </div>
-                    <div class="promo__wrap promo__wrap--selects">
-                        <label for="Metro">
-                            <select class="promo__select" id="Metro" name="metro">
-                                <option disabled selected style="color:grey" value="">Станция метро</option>
-                                <option label="Алтуфьево" id="metro1">Алтуфьево</option>
-                                <option label="Бибирево" id="metro2">Бибирево</option>
-                                <option label="Отрадное" id="metro3">Отрадное</option>
-                            </select>
-                        </label>
-                        <label for="Type">
-                            <select class="promo__select promo__select--secondary" id="Type" name="type">
-                                <option disabled selected style="color:grey" value="">Тип жилья</option>
-                                <option label="Первичка" id="type1">Первичка</option>
-                                <option label="Вторичка" id="type2">Вторичка</option>
-                            </select>
-                        </label>
-                        <label for="Area">
-                            <select class="promo__select promo__select--secondary" id="Area" name="area">
-                                <option disabled selected style="color:grey" value="">Площадь</option>
-                                <option label="35-40" id="area1">35-40</option>
-                                <option label="45-55" id="area2">45-55</option>
-                            </select>
-                        </label>
-                        <label for="Repair">
-                            <select class="promo__select promo__select--secondary" id="Repair" name="repair">
-                                <option disabled selected style="color:grey" value="">Тип отделки</option>
-                                <option label="Бетон" id="repair1">Бетон</option>
-                                <option label="Чистовая" id="repair2">Чистовая</option>
-                            </select>
-                        </label>
-                        <label for="Complete">
-                            <select class="promo__select promo__select--secondary" id="Complete" name="complete">
-                                <option disabled selected style="color:grey" value="">Срок сдачи</option>
-                                <option label="2019" id="complete1">2019</option>
-                                <option label="2020" id="complete2">2020</option>
-                            </select>
-                        </label>
-                        <input type="submit" value="Найти" class="promo__btn">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="map">
-        <div class="map__container">
-            <div class="arrow__wrap">
-                <div class="arrow">
-                    <svg class="arrow__img" width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="arrow__svg" opacity="0.504576"
-                              d="M13.7731 31.987C14.3935 31.987 14.8963 31.4841 14.8963 30.8702V10.4751L19.9641 15.5429C20.1796 15.7584 20.4669 15.8694 20.7543 15.8694C21.0416 15.8694 21.329 15.7584 21.5445 15.5429C21.982 15.1053 21.982 14.3935 21.5445 13.9559L14.5633 6.97471C14.1257 6.53716 13.4139 6.53716 12.9763 6.97471L6.00163 13.9559C5.56407 14.3935 5.56407 15.1053 6.00163 15.5429C6.43918 15.9804 7.15101 15.9804 7.58856 15.5429L12.6563 10.4751V30.8702C12.6563 31.4841 13.1526 31.987 13.7731 31.987Z"
-                              fill="#20262E"></path>
-                        <path class="arrow__svg" opacity="0.504576"
-                              d="M27.5461 1.12327C27.5461 0.502857 27.0433 0 26.4294 0H1.11673C0.496327 0 0 0.502857 0 1.12327C0 1.74367 0.502857 2.24653 1.11673 2.24653H26.4294C27.0498 2.24 27.5461 1.73714 27.5461 1.12327Z"
-                              fill="#20262E"></path>
-                    </svg>
+                    <img src="/img/html.png" alt="icon" class="icons html">
+                    <img src="/img/react.png" alt="icon" class="icons react">
+                    <img src="/img/js.png" alt="icon" class="icons js">
+                    <img src="/img/css.png" alt="icon" class="icons css">
                 </div>
-            </div>
-            <div class="container">
-                <div class="map__wrap pt-65">
-                    <div class="map__card">
-                        <div class="map__inner">
-                            <img src="images/map__photo.png" alt="photo" class="map__img">
-                            <div class="map__box">
-                                <h3 class="map__title">ЖК Премиум-квартал JAZZ</h3>
-                                <div class="map__box-item">
-                                    <img src="images/metro-logo-vector-light%20copy.png" alt="icon" class="map__icon">
-                                    <p class="map__text-heavy">Марьина роща</p>
-                                    <p class="map__text-light">2 минуты пешком</p>
-                                </div>
-                                <p class="map__address">Марьина Роща, ул. Сущёвский Вал, 49</p>
-                                <div class="map__box-item map__box-item--border">
-                                    <p class="map__text-light map__text-light--flat">1-комнатные от 30м<sup>2</sup></p>
-                                    <p class="map__text-heavy map__text-heavy--flat">6 900 000 р.</p>
-                                </div>
-                                <div class="map__box-item map__box-item--border">
-                                    <p class="map__text-light map__text-light--flat">2-комнатные от 75м<sup>2</sup></p>
-                                    <p class="map__text-heavy map__text-heavy--flat">22 900 000 р.</p>
-                                </div>
-                                <div class="map__box-item map__box-item--border">
-                                    <p class="map__text-light map__text-light--flat">3-комнатные от 74м<sup>2</sup></p>
-                                    <p class="map__text-heavy map__text-heavy--flat">17 400 000 р.</p>
-                                </div>
-                                <div class="map__box-item map__box-item--border">
-                                    <p class="map__text-light map__text-light--flat">4-комнатные от 177м<sup>2</sup></p>
-                                    <p class="map__text-heavy map__text-heavy--flat">63 200 000 р.</p>
-                                </div>
-                                <div class="map__box-item mt-10">
-                                    <p class="map__subtext map__subtext--light">Стадия готовности:</p>
-                                    <p class="map__subtext map__subtext--heavy">На заселении</p>
-                                </div>
-                                <div class="map__box-item">
-                                    <p class="map__subtext map__subtext--light">Ипотека:</p>
-                                    <p class="map__subtext map__subtext--heavy">Есть</p>
-                                </div>
-                                <div class="map__box-item mb-15">
-                                    <p class="map__subtext map__subtext--light">Отделка:</p>
-                                    <p class="map__subtext map__subtext--heavy">Возможна</p>
-                                </div>
-                                <a href="#" class="btn map__btn">Заказать просмотр</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="social-box">
+                    <a href="https://www.facebook.com/profile.php?id=1618424262" target="_blank" class="social-box__link">
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0"
+                                  fill="#4267b2"/>
+                            <path d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0"
+                                  fill="#fff"/>
+                        </svg>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=79154282713&text=" class="social-box__link" target="_blank">
+                        <svg height="100%"
+                             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"><g id="WhatsApp-Logo-Icon"><path d="M116.225,-0.001c-11.264,0.512 -26.112,1.536 -32.768,3.072c-10.24,2.048 -19.968,5.12 -27.648,9.216c-9.728,4.608 -17.92,10.752 -25.088,17.92c-7.68,7.68 -13.824,15.872 -18.432,25.6c-4.096,7.68 -7.168,17.408 -9.216,27.648c-1.536,6.656 -2.56,21.504 -2.56,32.768c-0.512,4.608 -0.512,10.752 -0.512,13.824l0,251.905l0,13.824c0.512,11.264 1.536,26.112 3.072,32.768c2.048,10.24 5.12,19.968 9.216,27.648c4.608,9.728 10.752,17.92 17.92,25.088c7.68,7.68 15.872,13.824 25.6,18.432c7.68,4.096 17.408,7.168 27.648,9.216c6.656,1.536 21.504,2.56 32.768,2.56c4.608,0.512 10.752,0.512 13.824,0.512l251.904,0l13.824,0c11.264,-0.512 26.112,-1.536 32.768,-3.072c10.24,-2.048 19.968,-5.12 27.648,-9.216c9.728,-4.608 17.92,-10.752 25.088,-17.92c7.68,-7.68 13.824,-15.872 18.432,-25.6c4.096,-7.68 7.168,-17.408 9.216,-27.648c1.536,-6.656 2.56,-21.504 2.56,-32.768c0.512,-4.608 0.512,-10.752 0.512,-13.824l0,-265.729c-0.512,-11.264 -1.536,-26.112 -3.072,-32.768c-2.048,-10.24 -5.12,-19.968 -9.216,-27.648c-4.608,-9.728 -10.752,-17.92 -17.92,-25.088c-7.68,-7.68 -15.872,-13.824 -25.6,-18.432c-7.68,-4.096 -17.408,-7.168 -27.648,-9.216c-6.656,-1.536 -21.504,-2.56 -32.768,-2.56c-4.608,-0.512 -10.752,-0.512 -13.824,-0.512l-265.728,0Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/><path
+                                d="M344.754,289.698c-4.56,-2.282 -26.98,-13.311 -31.161,-14.832c-4.18,-1.521 -7.219,-2.282 -10.259,2.282c-3.041,4.564 -11.78,14.832 -14.44,17.875c-2.66,3.042 -5.32,3.423 -9.88,1.14c-4.561,-2.281 -19.254,-7.095 -36.672,-22.627c-13.556,-12.087 -22.709,-27.017 -25.369,-31.581c-2.66,-4.564 -0.283,-7.031 2,-9.304c2.051,-2.041 4.56,-5.324 6.84,-7.986c2.28,-2.662 3.04,-4.564 4.56,-7.606c1.52,-3.042 0.76,-5.705 -0.38,-7.987c-1.14,-2.282 -10.26,-24.72 -14.06,-33.848c-3.701,-8.889 -7.461,-7.686 -10.26,-7.826c-2.657,-0.132 -5.7,-0.16 -8.74,-0.16c-3.041,0 -7.98,1.141 -12.161,5.704c-4.18,4.564 -15.96,15.594 -15.96,38.032c0,22.438 16.34,44.116 18.62,47.159c2.281,3.043 32.157,49.089 77.902,68.836c10.88,4.697 19.374,7.501 25.997,9.603c10.924,3.469 20.866,2.98 28.723,1.806c8.761,-1.309 26.98,-11.029 30.781,-21.677c3.799,-10.649 3.799,-19.777 2.659,-21.678c-1.139,-1.902 -4.179,-3.043 -8.74,-5.325m-83.207,113.573l-0.061,0c-27.22,-0.011 -53.917,-7.32 -77.207,-21.137l-5.539,-3.287l-57.413,15.056l15.325,-55.959l-3.608,-5.736c-15.184,-24.145 -23.203,-52.051 -23.192,-80.704c0.033,-83.611 68.083,-151.635 151.756,-151.635c40.517,0.016 78.603,15.811 107.243,44.474c28.64,28.663 44.404,66.764 44.389,107.283c-0.035,83.617 -68.083,151.645 -151.693,151.645m129.102,-280.709c-34.457,-34.486 -80.281,-53.487 -129.103,-53.507c-100.595,0 -182.468,81.841 -182.508,182.437c-0.013,32.156 8.39,63.546 24.361,91.212l-25.892,94.545l96.75,-25.37c26.657,14.535 56.67,22.194 87.216,22.207l0.075,0c100.586,0 182.465,-81.852 182.506,-182.448c0.019,-48.751 -18.946,-94.59 -53.405,-129.076"
+                                style="fill:#fff;"/></g>
+                            <defs><linearGradient gradientTransform="matrix(0,-512,-512,0,256.001,512)" gradientUnits="userSpaceOnUse" id="_Linear1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" style="stop-color:#25cf43;stop-opacity:1"/><stop
+                                    offset="1" style="stop-color:#61fd7d;stop-opacity:1"/></linearGradient></defs></svg>
+                    </a>
+                    <a href="skype:Skype_lionsbet" class="social-box__link" target="_blank">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>.cls-1 {
+                                    fill: #00afed;
+                                }
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content">
-        <div class="content__container pt-60">
-            <div class="content__leftside">
-                <div class="content__wrap1">
-                    <h1 class="content__title">Микрорайон Некрасовка</h1>
-                    <div class="content__wrap content__wrap--address">
-                        <div class="content__box">
-                            <img src="images/metro-logo-vector-light%20copy.png" alt="icon" class="map__icon">
-                            <p class="content__address">Марьина роща</p>
-                        </div>
-                        <p class="content__address content__address--light">2 минуты пешком</p>
-                    </div>
-                    <p class="content__sub-address">Москва, ЮВАО, район Некрасовка, Люберецкие поля аэрации</p>
+                                .cls-2 {
+                                    fill: #fff;
+                                }
 
-                    <div class="content__inner">
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light">1-комнатные от 30м<sup>2</sup></p>
-                            <p class="content__text content__text--top">6 900 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">2-комнатные от 75м<sup>2</sup></p>
-                            <p class="content__text">17 400 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">3-комнатные от 74м<sup>2</sup></p>
-                            <p class="content__text">22 900 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">4-комнатные от 177м<sup>2</sup></p>
-                            <p class="content__text">от 63 200 000 р.</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Стадия готовности:</p>
-                            <p class="content__text content__text--sub">Монтаж завершён.Ввод дома <br> в эксплуатацию в
-                                4 квартале
-                                <br> 2019/на заселении</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Ипотека:</p>
-                            <p class="content__text content__text--sub">Есть</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Отделка:</p>
-                            <p class="content__text content__text--sub">Возможна</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__wrap1">
-                    <div class="content__wrap content__wrap--menu">
-                        <a href="#" class="content__link content__link--first">
-                            <div class="content__item">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect class="content__svg" x="3.67065" y="10.3627" width="7.62896" height="1.2715"
-                                          fill="#079FC2"></rect>
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M0.491898 5.59456L7.48512 0L14.4783 5.59456V14.1772H0.491898V5.59456ZM1.7634 6.2303V12.9057H13.2068V6.2303L7.48512 1.65292L1.7634 6.2303Z"
-                                          fill="#079FC2">
-                                    </path>
-                                </svg>
-                            </div>
+                                .cls-3 {
+                                    fill: #00afee;
+                                }</style>
+                            </defs>
+                            <title/>
+                            <g data-name="17-skype" id="_17-skype">
+                                <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/>
+                                <path class="cls-2"
+                                      d="M53.11,36.35a22.06,22.06,0,0,0-25.4-25.49A12.34,12.34,0,0,0,10.9,27.64a22,22,0,0,0,25.4,25.5A12.35,12.35,0,0,0,53.11,36.35Z"/>
+                                <path class="cls-3"
+                                      d="M32.05,46a11.54,11.54,0,0,1-9.79-5.53,2.4,2.4,0,1,1,4.19-2.34,6.72,6.72,0,0,0,5.6,3.07c3.61,0,6.4-1.45,6.4-2.7,0-1.76-.51-3.42-6.74-4.33-8.27-1.2-9.16-5.76-9.16-7.67,0-7,5.17-8.5,9.5-8.5,8,0,10.31,5.12,10.4,5.34a2.4,2.4,0,0,1-4.37,2c-.1-.18-1.41-2.51-6-2.51s-4.7,2-4.7,3.7c0,2,3.86,2.75,5,2.92,3.25.48,10.85,1.58,10.85,9.08C43.25,42.89,38.54,46,32.05,46Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/lionsbet1" class="social-box__link" target="_blank">
+                        <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 508.33 508.36"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>.cls-1 {
+                                    fill: #2ca3db;
+                                    fill-rule: evenodd;
+                                }
 
-                            <p class="content__text-btn">ипотека</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M1.21043 14.7829H15.966C16.2805 14.7829 16.5267 14.5367 16.5267 14.2222V1.70938C16.5267 1.39485 16.2805 1.14869 15.966 1.14869H13.1899V0.670059C13.1899 0.355529 12.9438 0.109375 12.6292 0.109375C12.3147 0.109375 12.0685 0.355529 12.0685 0.670059V1.14869H5.20359V0.670059C5.20359 0.355529 4.95743 0.109375 4.6429 0.109375C4.32837 0.109375 4.08222 0.355529 4.08222 0.670059V1.14869H1.21043C0.895896 1.14869 0.649742 1.39485 0.649742 1.70938V14.2359C0.649742 14.5367 0.909571 14.7829 1.21043 14.7829ZM1.77111 2.27006H4.08222V2.57091C4.08222 2.88544 4.32837 3.1316 4.6429 3.1316C4.95743 3.1316 5.20359 2.88544 5.20359 2.57091V2.27006H12.0685V2.57091C12.0685 2.88544 12.3147 3.1316 12.6292 3.1316C12.9438 3.1316 13.1899 2.88544 13.1899 2.57091V2.27006H15.419V3.71963H1.77111V2.27006ZM15.4053 4.841H1.77111V13.6752H15.4053V4.841Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M12.6292 7.41187H4.56085C4.24632 7.41187 4.00017 7.65802 4.00017 7.97255C4.00017 8.28708 4.24632 8.53323 4.56085 8.53323H12.6292C12.9438 8.53323 13.1899 8.28708 13.1899 7.97255C13.1899 7.65802 12.9438 7.41187 12.6292 7.41187Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M8.59504 10.1196H4.56085C4.24632 10.1196 4.00017 10.3658 4.00017 10.6803C4.00017 10.9948 4.24632 11.241 4.56085 11.241H8.59504C8.90957 11.241 9.15572 10.9948 9.15572 10.6803C9.15572 10.3658 8.90957 10.1196 8.59504 10.1196Z"
-                                          fill="#079FC2"></path>
-                                </svg>
-                            </div>
-                            <p class="content__text-btn">рассрочка</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg"
-                                              d="M14.3826 0.195051C14.1261 -0.0617617 13.7099 -0.0617617 13.4535 0.195051L0.772743 12.8758C0.51604 13.1324 0.51604 13.5482 0.772743 13.8048C0.90104 13.9332 1.06926 13.9974 1.23737 13.9974C1.40548 13.9974 1.5737 13.9332 1.70188 13.8048L14.3826 1.12408C14.6393 0.867488 14.6393 0.451645 14.3826 0.195051Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.57576 3.12831C0.57576 1.40741 1.97598 0.00708008 3.69688 0.00708008C5.41779 0.00708008 6.81801 1.4073 6.81801 3.12821C6.81801 4.84911 5.4179 6.24944 3.69688 6.24944C1.97598 6.24944 0.57576 4.84922 0.57576 3.12831ZM1.8899 3.12821C1.8899 4.1245 2.70048 4.93519 3.69689 4.93519C4.69329 4.93519 5.50387 4.1245 5.50387 3.12821C5.50387 2.13191 4.69329 1.32122 3.69689 1.32122C2.70059 1.32122 1.8899 2.13191 1.8899 3.12821Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M8.33351 10.8758C8.33351 9.15486 9.73373 7.75464 11.4546 7.75464C13.1755 7.75464 14.5758 9.15475 14.5758 10.8758C14.5758 12.5968 13.1755 13.9969 11.4546 13.9969C9.73373 13.9969 8.33351 12.5967 8.33351 10.8758ZM9.64765 10.8757C9.64765 11.872 10.4582 12.6826 11.4546 12.6826C12.451 12.6826 13.2616 11.872 13.2616 10.8757C13.2616 9.87936 12.4509 9.06867 11.4546 9.06867C10.4583 9.06867 9.64765 9.87936 9.64765 10.8757Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
+                                .cls-2 {
+                                    fill: #fff;
+                                }</style>
+                            </defs>
+                            <title/>
+                            <path class="cls-1"
+                                  d="M485,29.72c11.45,15.13,16.61,40.21,19.15,70.7,3.36,45.5,4.71,100.1,6,156.52-1.67,57.47-2.35,115.43-6,156.52-2.88,31.54-9,52.66-19.22,65.47-13,12.79-37.94,23.59-73.5,26.15-43.25,3.69-96.61,3.65-155.48,5.1-65.44-1.12-109.82-.64-156.38-5.08-36.32-2.52-60.08-13.19-74.7-26.07-10.83-14.54-14-30-17-66.24-3.75-41.85-4.58-98.56-6-155.54C4,200.57,4.13,143.44,7.9,100.74,10.43,67.05,14.42,44.4,24.65,30,39,17.77,63.48,11.69,100,8.69c50-5.85,102.06-7,155.88-6.87,55.39.09,108.56,1.67,156,6.34,32,2.56,58.48,8.07,73.07,21.56Z"
+                                  transform="translate(-1.83 -1.82)"/>
+                            <path class="cls-2"
+                                  d="M378.92,125.44l-264.48,102c-18.05,7.24-17.94,17.31-3.29,21.8l66,20.59,25.24,77.38c3.07,8.47,1.56,11.83,10.45,11.83,6.86,0,9.91-3.13,13.73-6.86,2.43-2.38,16.86-16.41,33-32.08l68.61,50.7c12.63,7,21.74,3.36,24.89-11.73l45-212.24C402.66,128.35,391,120,378.92,125.44ZM187.46,265.11l148.68-93.8c7.42-4.5,14.23-2.08,8.64,2.88L217.48,289.05l-5,52.87Z"
+                                  id="path9" transform="translate(-1.83 -1.82)"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aleksey-sokolov-90b95a192/" class="social-box__link linkedin" target="_blank">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="438.549px" height="438.549px" viewBox="0 0 438.549 438.549"
+                             style="enable-background:new 0 0 438.549 438.549;"
+                             xml:space="preserve">
+<g>
+	<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+		C438.536,184.851,428.728,148.168,409.132,114.573z"/>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+                            <g>
+</g>
+</svg>
+                    </a>
+                    <a href="https://vk.com/sokolik1983" class="social-box__link" target="_blank">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>.cls-1 {
+                                    fill: #4489c8;
+                                }
 
-                            <p class="content__text-btn">скидки</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.615387 9C0.615387 4.03762 4.65301 0 9.61539 0C14.5778 0 18.6154 4.03762 18.6154 9C18.6154 13.9624 14.5778 18 9.61539 18C4.65301 18 0.615387 13.9624 0.615387 9ZM1.74039 9C1.74039 13.3425 5.27401 16.875 9.61539 16.875C13.9568 16.875 17.4904 13.3425 17.4904 9C17.4904 4.6575 13.9568 1.125 9.61539 1.125C5.27401 1.125 1.74039 4.6575 1.74039 9Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M9.05289 4.5H11.8654C13.1063 4.5 14.1154 5.50912 14.1154 6.75C14.1154 7.99088 13.1063 9 11.8654 9H9.61539V10.125H11.3029C11.6134 10.125 11.8654 10.377 11.8654 10.6875C11.8654 10.998 11.6134 11.25 11.3029 11.25H9.61539V12.9375C9.61539 13.248 9.36339 13.5 9.05289 13.5C8.74239 13.5 8.49039 13.248 8.49039 12.9375V11.25H6.80289C6.49239 11.25 6.24039 10.998 6.24039 10.6875C6.24039 10.377 6.49239 10.125 6.80289 10.125H8.49039V5.0625C8.49039 4.752 8.74239 4.5 9.05289 4.5ZM9.61539 7.875H11.8654C12.4864 7.875 12.9904 7.36987 12.9904 6.75C12.9904 6.13013 12.4864 5.625 11.8654 5.625H9.61539V7.875Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn pt-3">субсидии</p>
-                        </a>
-                    </div>
+                                .cls-2 {
+                                    fill: #fff;
+                                }</style>
+                            </defs>
+                            <title/>
+                            <g data-name="32-vk" id="_32-vk">
+                                <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/>
+                                <path class="cls-2"
+                                      d="M9.62,19.77H17.3a.79.79,0,0,1,.74.51c.85,2.19,4.38,10.76,7.61,11.46,2.4,0,1.55-11.4-1.5-11.4-.8,0,1.42-1.42,1.57-1.48a16.38,16.38,0,0,1,8.66,0c1.53.64,1.79,2.43,1.83,3.95s-1.7,8,.59,8.7c3,.92,6.86-8.49,7.76-10.8a.79.79,0,0,1,.74-.5h8.55a.8.8,0,0,1,.74,1.11,74.74,74.74,0,0,1-6.31,11.52,1.59,1.59,0,0,0,.16,2C51,37.58,58,45.34,54,45.34H45.37a1.57,1.57,0,0,1-1.18-.53c-1.34-1.48-5.24-5.6-7-5.27-1.46.27-1.6,2.75-1.53,4.37a1.6,1.6,0,0,1-1.48,1.68c-1.53.09-3.62.13-3.81.12-6.1-.39-9.71-4.46-13.16-9A56.33,56.33,0,0,1,8.86,20.83.81.81,0,0,1,9.62,19.77Z"/>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <div class="content__rightside">
-                <div class="content__promo">
-                    <div class="content__wrap content__wrap--noborder">
-                        <img src="images/calendar%20icon.png" alt="icon" class="content__icon mr-15">
-                        <p class="content__promo-text">Подарочные сертификаты</p>
-                    </div>
-                    <div class="content__wrap content__wrap--noborder">
-                        <img src="images/megaphone.png" alt="icon" class="content__icon content__icon--secondary mr-15">
-                        <p class="content__promo-text">Акция</p>
-                    </div>
-                </div>
-                <a href="#" class="btn content__btn">Подробнее</a>
-            </div>
-        </div>
-        <div class="content__container pt-40">
-            <div class="content__leftside">
-                <div class="content__wrap1">
-                    <h1 class="content__title">ДОМ «Флагман»</h1>
-                    <div class="content__wrap content__wrap--address">
-                       <div class="content__box">
-                           <img src="images/metro-logo-vector-light%20copy%202.svg" alt="icon" class="map__icon">
-                           <p class="content__address">Выхино</p>
-                       </div>
-                        <p class="content__address content__address--light">2 минуты пешком</p>
-                    </div>
-                    <p class="content__sub-address">Московская область, г. Долгопрудный, ул. Набережная</p>
-
-                    <div class="content__inner">
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light">1-комнатные от 30м<sup>2</sup></p>
-                            <p class="content__text content__text--top">от 3 239 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">2-комнатные от 75м<sup>2</sup></p>
-                            <p class="content__text">от 4 734 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">3-комнатные от 74м<sup>2</sup></p>
-                            <p class="content__text">от 6 512 440 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">4-комнатные от 177м<sup>2</sup></p>
-                            <p class="content__text">от 63 200 000 р.</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Стадия готовности:</p>
-                            <p class="content__text content__text--sub">Введён в эксплуатацию/На <br> заселении</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Ипотека:</p>
-                            <p class="content__text content__text--sub">Есть</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Отделка:</p>
-                            <p class="content__text content__text--sub">Возможна</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__wrap1">
-                    <div class="content__wrap content__wrap--menu">
-                        <a href="#" class="content__link content__link--first">
-                            <div class="content__item">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect class="content__svg" x="3.67065" y="10.3627" width="7.62896" height="1.2715"
-                                          fill="#079FC2"></rect>
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M0.491898 5.59456L7.48512 0L14.4783 5.59456V14.1772H0.491898V5.59456ZM1.7634 6.2303V12.9057H13.2068V6.2303L7.48512 1.65292L1.7634 6.2303Z"
-                                          fill="#079FC2">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn">ипотека</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M1.21043 14.7829H15.966C16.2805 14.7829 16.5267 14.5367 16.5267 14.2222V1.70938C16.5267 1.39485 16.2805 1.14869 15.966 1.14869H13.1899V0.670059C13.1899 0.355529 12.9438 0.109375 12.6292 0.109375C12.3147 0.109375 12.0685 0.355529 12.0685 0.670059V1.14869H5.20359V0.670059C5.20359 0.355529 4.95743 0.109375 4.6429 0.109375C4.32837 0.109375 4.08222 0.355529 4.08222 0.670059V1.14869H1.21043C0.895896 1.14869 0.649742 1.39485 0.649742 1.70938V14.2359C0.649742 14.5367 0.909571 14.7829 1.21043 14.7829ZM1.77111 2.27006H4.08222V2.57091C4.08222 2.88544 4.32837 3.1316 4.6429 3.1316C4.95743 3.1316 5.20359 2.88544 5.20359 2.57091V2.27006H12.0685V2.57091C12.0685 2.88544 12.3147 3.1316 12.6292 3.1316C12.9438 3.1316 13.1899 2.88544 13.1899 2.57091V2.27006H15.419V3.71963H1.77111V2.27006ZM15.4053 4.841H1.77111V13.6752H15.4053V4.841Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M12.6292 7.41187H4.56085C4.24632 7.41187 4.00017 7.65802 4.00017 7.97255C4.00017 8.28708 4.24632 8.53323 4.56085 8.53323H12.6292C12.9438 8.53323 13.1899 8.28708 13.1899 7.97255C13.1899 7.65802 12.9438 7.41187 12.6292 7.41187Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M8.59504 10.1196H4.56085C4.24632 10.1196 4.00017 10.3658 4.00017 10.6803C4.00017 10.9948 4.24632 11.241 4.56085 11.241H8.59504C8.90957 11.241 9.15572 10.9948 9.15572 10.6803C9.15572 10.3658 8.90957 10.1196 8.59504 10.1196Z"
-                                          fill="#079FC2"></path>
-                                </svg>
-                            </div>
-                            <p class="content__text-btn">рассрочка</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg"
-                                              d="M14.3826 0.195051C14.1261 -0.0617617 13.7099 -0.0617617 13.4535 0.195051L0.772743 12.8758C0.51604 13.1324 0.51604 13.5482 0.772743 13.8048C0.90104 13.9332 1.06926 13.9974 1.23737 13.9974C1.40548 13.9974 1.5737 13.9332 1.70188 13.8048L14.3826 1.12408C14.6393 0.867488 14.6393 0.451645 14.3826 0.195051Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.57576 3.12831C0.57576 1.40741 1.97598 0.00708008 3.69688 0.00708008C5.41779 0.00708008 6.81801 1.4073 6.81801 3.12821C6.81801 4.84911 5.4179 6.24944 3.69688 6.24944C1.97598 6.24944 0.57576 4.84922 0.57576 3.12831ZM1.8899 3.12821C1.8899 4.1245 2.70048 4.93519 3.69689 4.93519C4.69329 4.93519 5.50387 4.1245 5.50387 3.12821C5.50387 2.13191 4.69329 1.32122 3.69689 1.32122C2.70059 1.32122 1.8899 2.13191 1.8899 3.12821Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" id="Shape_3" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M8.33351 10.8758C8.33351 9.15486 9.73373 7.75464 11.4546 7.75464C13.1755 7.75464 14.5758 9.15475 14.5758 10.8758C14.5758 12.5968 13.1755 13.9969 11.4546 13.9969C9.73373 13.9969 8.33351 12.5967 8.33351 10.8758ZM9.64765 10.8757C9.64765 11.872 10.4582 12.6826 11.4546 12.6826C12.451 12.6826 13.2616 11.872 13.2616 10.8757C13.2616 9.87936 12.4509 9.06867 11.4546 9.06867C10.4583 9.06867 9.64765 9.87936 9.64765 10.8757Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn">скидки</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.615387 9C0.615387 4.03762 4.65301 0 9.61539 0C14.5778 0 18.6154 4.03762 18.6154 9C18.6154 13.9624 14.5778 18 9.61539 18C4.65301 18 0.615387 13.9624 0.615387 9ZM1.74039 9C1.74039 13.3425 5.27401 16.875 9.61539 16.875C13.9568 16.875 17.4904 13.3425 17.4904 9C17.4904 4.6575 13.9568 1.125 9.61539 1.125C5.27401 1.125 1.74039 4.6575 1.74039 9Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M9.05289 4.5H11.8654C13.1063 4.5 14.1154 5.50912 14.1154 6.75C14.1154 7.99088 13.1063 9 11.8654 9H9.61539V10.125H11.3029C11.6134 10.125 11.8654 10.377 11.8654 10.6875C11.8654 10.998 11.6134 11.25 11.3029 11.25H9.61539V12.9375C9.61539 13.248 9.36339 13.5 9.05289 13.5C8.74239 13.5 8.49039 13.248 8.49039 12.9375V11.25H6.80289C6.49239 11.25 6.24039 10.998 6.24039 10.6875C6.24039 10.377 6.49239 10.125 6.80289 10.125H8.49039V5.0625C8.49039 4.752 8.74239 4.5 9.05289 4.5ZM9.61539 7.875H11.8654C12.4864 7.875 12.9904 7.36987 12.9904 6.75C12.9904 6.13013 12.4864 5.625 11.8654 5.625H9.61539V7.875Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn pt-3">субсидии</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="content__rightside content__rightside--second">
-                <a href="#" class="btn content__btn">Подробнее</a>
-            </div>
-        </div>
-        <div class="content__container pt-40">
-            <div class="content__leftside">
-                <div class="content__wrap1">
-                    <h1 class="content__title">ЖК «Лайково»</h1>
-                    <div class="content__wrap content__wrap--address">
-                        <div class="content__box">
-                            <img src="images/metro-logo-vector-light%20copy%203.svg" alt="icon" class="map__icon">
-                            <p class="content__address">Ховрино</p>
-                        </div>
-                        <p class="content__address content__address--light">15 минут транспортом</p>
-                    </div>
-                    <p class="content__sub-address">Московская область, г. Долгопрудный, ул. Дирижабельная</p>
-
-                    <div class="content__inner">
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light">1-комнатные от 30м<sup>2</sup></p>
-                            <p class="content__text content__text--top">6 900 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">2-комнатные от 75м<sup>2</sup></p>
-                            <p class="content__text">17 400 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">3-комнатные от 74м<sup>2</sup></p>
-                            <p class="content__text">22 900 000 р.</p>
-                        </div>
-                        <div class="content__wrap">
-                            <p class="content__text content__text--light ">4-комнатные от 177м<sup>2</sup></p>
-                            <p class="content__text">от 63 200 000 р.</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Стадия готовности:</p>
-                            <p class="content__text content__text--sub">Монтаж завершён.Ввод дома <br> в эксплуатацию в
-                                4 квартале
-                                <br> 2019/на заселении</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Ипотека:</p>
-                            <p class="content__text content__text--sub">Есть</p>
-                        </div>
-                        <div class="content__wrap content__wrap--noborder">
-                            <p class="content__text content__text--light ">Отделка:</p>
-                            <p class="content__text content__text--sub">Возможна</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__wrap1">
-                    <div class="content__wrap content__wrap--menu">
-                        <a href="#" class="content__link content__link--first">
-                            <div class="content__item">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect class="content__svg" x="3.67065" y="10.3627" width="7.62896" height="1.2715"
-                                          fill="#079FC2"></rect>
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M0.491898 5.59456L7.48512 0L14.4783 5.59456V14.1772H0.491898V5.59456ZM1.7634 6.2303V12.9057H13.2068V6.2303L7.48512 1.65292L1.7634 6.2303Z"
-                                          fill="#079FC2">
-                                    </path>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn">ипотека</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M1.21043 14.7829H15.966C16.2805 14.7829 16.5267 14.5367 16.5267 14.2222V1.70938C16.5267 1.39485 16.2805 1.14869 15.966 1.14869H13.1899V0.670059C13.1899 0.355529 12.9438 0.109375 12.6292 0.109375C12.3147 0.109375 12.0685 0.355529 12.0685 0.670059V1.14869H5.20359V0.670059C5.20359 0.355529 4.95743 0.109375 4.6429 0.109375C4.32837 0.109375 4.08222 0.355529 4.08222 0.670059V1.14869H1.21043C0.895896 1.14869 0.649742 1.39485 0.649742 1.70938V14.2359C0.649742 14.5367 0.909571 14.7829 1.21043 14.7829ZM1.77111 2.27006H4.08222V2.57091C4.08222 2.88544 4.32837 3.1316 4.6429 3.1316C4.95743 3.1316 5.20359 2.88544 5.20359 2.57091V2.27006H12.0685V2.57091C12.0685 2.88544 12.3147 3.1316 12.6292 3.1316C12.9438 3.1316 13.1899 2.88544 13.1899 2.57091V2.27006H15.419V3.71963H1.77111V2.27006ZM15.4053 4.841H1.77111V13.6752H15.4053V4.841Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M12.6292 7.41187H4.56085C4.24632 7.41187 4.00017 7.65802 4.00017 7.97255C4.00017 8.28708 4.24632 8.53323 4.56085 8.53323H12.6292C12.9438 8.53323 13.1899 8.28708 13.1899 7.97255C13.1899 7.65802 12.9438 7.41187 12.6292 7.41187Z"
-                                          fill="#079FC2"></path>
-                                    <path class="content__svg"
-                                          d="M8.59504 10.1196H4.56085C4.24632 10.1196 4.00017 10.3658 4.00017 10.6803C4.00017 10.9948 4.24632 11.241 4.56085 11.241H8.59504C8.90957 11.241 9.15572 10.9948 9.15572 10.6803C9.15572 10.3658 8.90957 10.1196 8.59504 10.1196Z"
-                                          fill="#079FC2"></path>
-                                </svg>
-                            </div>
-                            <p class="content__text-btn">рассрочка</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg"
-                                              d="M14.3826 0.195051C14.1261 -0.0617617 13.7099 -0.0617617 13.4535 0.195051L0.772743 12.8758C0.51604 13.1324 0.51604 13.5482 0.772743 13.8048C0.90104 13.9332 1.06926 13.9974 1.23737 13.9974C1.40548 13.9974 1.5737 13.9332 1.70188 13.8048L14.3826 1.12408C14.6393 0.867488 14.6393 0.451645 14.3826 0.195051Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.57576 3.12831C0.57576 1.40741 1.97598 0.00708008 3.69688 0.00708008C5.41779 0.00708008 6.81801 1.4073 6.81801 3.12821C6.81801 4.84911 5.4179 6.24944 3.69688 6.24944C1.97598 6.24944 0.57576 4.84922 0.57576 3.12831ZM1.8899 3.12821C1.8899 4.1245 2.70048 4.93519 3.69689 4.93519C4.69329 4.93519 5.50387 4.1245 5.50387 3.12821C5.50387 2.13191 4.69329 1.32122 3.69689 1.32122C2.70059 1.32122 1.8899 2.13191 1.8899 3.12821Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M8.33351 10.8758C8.33351 9.15486 9.73373 7.75464 11.4546 7.75464C13.1755 7.75464 14.5758 9.15475 14.5758 10.8758C14.5758 12.5968 13.1755 13.9969 11.4546 13.9969C9.73373 13.9969 8.33351 12.5967 8.33351 10.8758ZM9.64765 10.8757C9.64765 11.872 10.4582 12.6826 11.4546 12.6826C12.451 12.6826 13.2616 11.872 13.2616 10.8757C13.2616 9.87936 12.4509 9.06867 11.4546 9.06867C10.4583 9.06867 9.64765 9.87936 9.64765 10.8757Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn">скидки</p>
-                        </a>
-                        <a href="#" class="content__link">
-                            <div class="content__item">
-                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M0.615387 9C0.615387 4.03762 4.65301 0 9.61539 0C14.5778 0 18.6154 4.03762 18.6154 9C18.6154 13.9624 14.5778 18 9.61539 18C4.65301 18 0.615387 13.9624 0.615387 9ZM1.74039 9C1.74039 13.3425 5.27401 16.875 9.61539 16.875C13.9568 16.875 17.4904 13.3425 17.4904 9C17.4904 4.6575 13.9568 1.125 9.61539 1.125C5.27401 1.125 1.74039 4.6575 1.74039 9Z"
-                                              fill="#079FC2"></path>
-                                        <path class="content__svg" fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M9.05289 4.5H11.8654C13.1063 4.5 14.1154 5.50912 14.1154 6.75C14.1154 7.99088 13.1063 9 11.8654 9H9.61539V10.125H11.3029C11.6134 10.125 11.8654 10.377 11.8654 10.6875C11.8654 10.998 11.6134 11.25 11.3029 11.25H9.61539V12.9375C9.61539 13.248 9.36339 13.5 9.05289 13.5C8.74239 13.5 8.49039 13.248 8.49039 12.9375V11.25H6.80289C6.49239 11.25 6.24039 10.998 6.24039 10.6875C6.24039 10.377 6.49239 10.125 6.80289 10.125H8.49039V5.0625C8.49039 4.752 8.74239 4.5 9.05289 4.5ZM9.61539 7.875H11.8654C12.4864 7.875 12.9904 7.36987 12.9904 6.75C12.9904 6.13013 12.4864 5.625 11.8654 5.625H9.61539V7.875Z"
-                                              fill="#079FC2"></path>
-                                    </g>
-                                </svg>
-                            </div>
-
-                            <p class="content__text-btn pt-3">субсидии</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="content__rightside content__rightside--third">
-                <div class="content__promo">
-                    <div class="content__wrap content__wrap--noborder">
-                        <img src="images/calendar%20icon.png" alt="icon" class="content__icon mr-15">
-                        <p class="content__promo-text">Подарочные сертификаты</p>
-                    </div>
-                </div>
-                <a href="#" class="btn content__btn">Подробнее</a>
-            </div>
-        </div>
-        <div class="container btn__container">
-            <a href="#" class="btn btn__secondary">все предложения</a>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="container footer__container">
-        <div class="footer__content">
-            <h2 class="footer__title header__text--bold">Офис Миэль «В Беляево»</h2>
-            <p class="footer__text">- это команда профессиональных экспертов и агентов по недвижимости с большим багажом
-                риелторской и юридической практики. Основные направления Миэль « В Беляево» - это продажа элитной
-                недвижимости и квартир в новостройках.</p>
-            <h2 class="footer__title-sub header__text--bold">Наши специалисты выполняют широкий спектр операций,
-                связанных с недвижимостью:</h2>
-            <div class="footer__wrap pb-40">
-                <div class="footer__inner">
-                    <img src="images/ofis_1.svg" alt="" class="footer__img">
-                    <p class="footer__icon-text content__sub-address">Подбор <br> квартир</p>
-                </div>
-                <div class="footer__inner">
-                    <img src="images/ofis_2.svg" alt="" class="footer__img">
-                    <p class="footer__icon-text content__sub-address">Проверка <br> застройщика <br> и/или застройщика
-                    </p>
-                </div>
-                <div class="footer__inner">
-                    <img src="images/ofis_3.svg" alt="" class="footer__img">
-                    <p class="footer__icon-text content__sub-address">Проверка и <br>оформление <br>документов</p>
-                </div>
-                <div class="footer__inner">
-                    <img src="images/ofis_4.svg" alt="" class="footer__img">
-                    <p class="footer__icon-text content__sub-address">Юридическая <br> поддержка</p>
-                </div>
-                <div class="footer__inner">
-                    <img src="images/ofis_5.svg" alt="" class="footer__img">
-                    <p class="footer__icon-text content__sub-address">Сопровождение <br> сделки</p>
-                </div>
-            </div>
-            <p class="footer__text pb-60">Если вы хотите купить квартиру в элитном жилом комплексе, то мы поможем вам
-                это
-                сделать не только максимально комфортно и безопасно, но и выгодно - мы всегда сообщаем о самых
-                интересных акциях и выбираем действительно горячие предложения.Кроме того, мы готовы помочь оформить
-                выгодную ипотеку.Каждый клиент становится для нас партнёром , которого мы готовы защитить от
-                всевозможных рисков и поддержать на всех этапах проведения сделки.</p>
-        </div>
-
-    </div>
-    <div class="container">
-        <div class="footer__wrap footer__subfooter pt-80 pb-80">
-            <p class="footer__subtext">© 2009–2016 Офис «В Беляево». При использовании материалов ссылка на сайт
-                обязательна.</p>
-            <div class="footer__box">
-                <img src="images/lamp%20icon.png" alt="icon" class="footer__icon">
-                <p class="footer__subtext">Разработка и продвижение - «Эврика»</p>
             </div>
         </div>
     </div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.js"></script>
-<script src="js/script.js"></script>
+    <div class="js-projects d-none">
+        <div>
+            <!-- Tab items -->
+            <div class="tabs">
+                <div class="tab-item active">
+                    Fish
+                </div>
+                <div class="tab-item">
+                    Bets
+                </div>
+                <div class="tab-item">
+                    Tickets
+                </div>
+                <div class="tab-item">
+                    Tanks
+                </div>
+                <div class="line"></div>
+            </div>
 
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <div class="tab-pane__wrap">
+                        <div class="tab-content__info">
+                            <div class="project-text__wrap">
+                                <p>Пока последний мой проект на чистом JS.</p>
+                                <p>Его особенности:</p>
+                                <ul class="about-project">
+                                    <li>Canvas - всё отрисовано</li>
+                                    <li>Анимированные персонажи</li>
+                                    <li>Координаты курсора, рыбка двигается за ним</li>
+                                    <li>Звук рандомный для лопающихся пузырьков</li>
+                                    <li>Плывущие сверху волны, тот же эффект используется на главной этого портфолио (плывущие облака)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content__btn">
+                                <a href="fish-project\index.html" target="_blank" class="tab-content__btn-try">Попробовать</a>
+                                <a href="https://github.com/sokolik1983-hub/fish-final" target="_blank"  class="tab-content__btn-git">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="tab-content__img">
+                            <img src="/img/fish_img.JPG" alt="project-img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane">
+                    <div class="tab-pane__wrap">
+                        <div class="tab-content__info">
+                            <div class="project-text__wrap">
+                                <p>Проект с использованием FireBase</p>
+                                <p>Его особенности:</p>
+                                <ul class="about-project">
+                                    <li>Регистрация и авторизация</li>
+                                    <li>Если вы забыли пароль, его можно восстановить</li>
+                                    <li>Вы можете добавлять свои сообщения и они останутся на форуме</li>
+                                    <li>Есть возможность менять свою аватарку и логин</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content__btn">
+                                <a href="entertainment-portal\index.html" target="_blank" class="tab-content__btn-try">Попробовать</a>
+                                <a href="https://github.com/sokolik1983-hub/entertainment-portal" target="_blank" class="tab-content__btn-git">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="tab-content__img">
+                            <img src="/img/bets_img.JPG" alt="project-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <div class="tab-pane__wrap">
+                        <div class="tab-content__info">
+                            <div class="project-text__wrap">
+                                <p>Работа с API Aviasales</p>
+                                <p>Его особенности:</p>
+                                <ul class="about-project">
+                                    <li>Получаем информацию от API Aviasales</li>
+                                    <li>Вы можете посмотреть билеты на ближайште даты</li>
+                                    <li>Реализован режим день/ночь</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content__btn">
+                                <a href="new2021\index.html" target="_blank" class="tab-content__btn-try">Попробовать</a>
+                                <a href="https://github.com/sokolik1983-hub/new2021" target="_blank" class="tab-content__btn-git">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="tab-content__img">
+                            <img src="/img/tickets_img .png" alt="project-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <div class="tab-pane__wrap">
+                        <div class="tab-content__info">
+                            <div class="project-text__wrap">
+                                <p>Мой самый первый проект, сделанный в августе 2020</p>
+                                <p>Его особенности:</p>
+                                <ul class="about-project">
+                                    <li>Очень много работы с методом getBoundingClientRect(), что очень помогло в работе в веб-студии</li>
+                                    <li>Есть звук</li>
+                                    <li>Реализована примитивная анимация (взрыв танков)</li>
+                                    <li>Нашим танком можно управлять с помощью стрелочек, выстрел пробел</li>
+                                    <li>Вражеские танки появляются рандомно с четырёх сторон, в разных местах</li>
+                                    <li>Вражеские танки начинают стрелять, только когда нас видят</li>
+                            </div>
+                            </ul>
+                            <div class="tab-content__btn">
+                                <a href="tank2020\index.html" target="_blank" class="tab-content__btn-try">Попробовать</a>
+                                <a href="https://github.com/sokolik1983-hub/tank2020" target="_blank" class="tab-content__btn-git">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="tab-content__img">
+                            <img src="/img/tanks_img.png" alt="project-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="react-projects d-none"></div>
+    <div class="my-works">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper my-swiper">
+                    <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)">
+                        <a href="https://activ-hall.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)">
+                        <a href="https://peli-can.com/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)">
+                        <a href="https://phcn.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)">
+                        <a href="https://gp175.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)">
+                        <a href="https://marcandre.com/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)">
+                        <a href="http://www.primapharm.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)">
+                        <a href="http://bukmeker-info.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)"></div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script src="/scripts/anime.min.js"></script>
+<script src="/scripts/script.js"></script>
+<script src="/scripts/name.js"></script>
+<script src="/scripts/controls.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+
+    //Перезагрузка окна при изменении размера окна, для правильного измерения размеров
+    window.addEventListener('resize', () => {
+        location.reload()
+    });
+
+</script>
+<!-- Initialize Swiper -->
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+</script>
 </body>
 </html>

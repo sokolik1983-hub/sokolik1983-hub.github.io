@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Выводим заголовок -->
+    <title>Ставка дня</title>
+    <!-- Подключаем normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js" defer></script>
+</head>
+<body>
+<!-- Создаем шапку сайта -->
+<header class="header">
+    <div class="header-wrapper">
+        <a href="/" class="header-logo">
+            Ставка дня
+        </a>
+        <a href="#" class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <!-- /.header-wrapper -->
+</header>
+
+<div class="content">
+    <main class="posts">
+
+        <section class="post">
+
+        </section>
+    </main>
+    <form action="#" class="add-post">
+        <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+        <textarea name="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+        <input type="text" name="tags" class="add-tags" placeholder="Добавьте теги, через запятую">
+        <div class="add-buttons">
+            <button type="submit" class="button add-button">
+                <svg class="icon icon-fire">
+                    <use xlink:href="img/icons.svg#fire"></use>
+                </svg>
+                Опубликовать пост
+            </button>
+        </div>
+    </form>
+    <!-- /.posts -->
+    <aside class="sidebar">
+        <div class="login">
+            <form class="login-form" action="">
+                <h2 class="login-title">Авторизация</h2>
+                <input type="e-mail" class="login-input login-email" name="email" minlength="3" required
+                       placeholder="Введите e-mail">
+                <input type="password" class="login-input login-password" name="password" minlength="3" required
+                       placeholder="Введите пароль">
+
+                <a href="#" class="login-forget">Забыли пароль</a>
+                <button class="login-signin">Войти</button>
+                <a href="#" class="login-signup">Регистрация</a>
+            </form>
+        </div>
+        <div class="user">
+            <div class="user-container">
+                <a href="#" class="user-info">
+                    <img src="img/avatar.jpeg" alt="photo: user" class="user-avatar">
+                    <span class="user-name"></span>
+                </a>
+                <div class="icon-box">
+                    <a href="#" class="edit">
+                        <img src="img/edit.svg" alt="icon" class="icon icon-edit">
+                    </a>
+                    <a href="#" class="exit">
+                        <svg class="icon icon-exit">
+                            <use xlink:href="img/icons.svg#exit"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="edit-container">
+
+                <form action="">
+                    <h2 class="edit-title">Редактировать</h2>
+                    <label class="edit-label">Ваш логин
+                        <input type="text" class="edit-input edit-username" name="username" minlength="3"
+                               placeholder="Ваш логин" required>
+                    </label>
+                    <label class="edit-label">Ваше фото
+                        <input type="text" class="edit-input edit-photo" name="photo" placeholder="URL-photo">
+                    </label>
+                    <button class="edit-btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+        <!-- /.user -->
+        <nav class="sidebar-nav">
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Ответы</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link active">Комментарии</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Оценки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Сохраненное </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Подписки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Заметки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Игнор-лист</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="new-post.html" class="button button-new-post">
+            <svg class="icon icon-fire">
+                <use xlink:href="img/icons.svg#fire"></use>
+            </svg>
+            Опубликовать пост
+        </a>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Ставка дня</h2>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <a href="#" class="card-body-title">Лига чемпионов: Манчестер Сити - ПСЖ</a>
+                <p class="card-text">ПСЖ против Манчестер Сити. Мне именно клуб Гвардиолы видеться фаворитом в данной
+                    игре. Оба клуба играют в атакующий футбол,оба коллектива не сидят в защите. Как мне кажется,голы в
+                    этой игре будут. Сити обладает хорошей атакой,как и хозяева,но все же оборона у команды Гвардиолы
+                    солиднее. Думаю гости выиграют и забьют два гола.</p>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+        <a href="#" class="ad"></a>
+    </aside>
+    <!-- /.sidebar -->
+</div>
+<!-- /.content -->
+
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBfUHGDDpVmHCqfKd1b9L6TZBrTkZjrspU",
+        authDomain: "entertainment-portal-9ae4a.firebaseapp.com",
+        projectId: "entertainment-portal-9ae4a",
+        storageBucket: "entertainment-portal-9ae4a.appspot.com",
+        messagingSenderId: "284443114681",
+        appId: "1:284443114681:web:9c46cf568b3413d9042f68"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+    console.log(firebase)
+
+
+    const loginElem = document.querySelector('.login'),
+        loginForm = document.querySelector('.login-form'),
+        emailInput = document.querySelector('.login-email'),
+        passwordInput = document.querySelector('.login-password'),
+        loginSignup = document.querySelector('.login-signup'),
+        userElem = document.querySelector('.user'),
+        userNameElem = document.querySelector('.user-name'),
+        regExpValidEmail = /^\w+\@\w+\.\w{2,}$/,
+        exitElem = document.querySelector('.exit'),
+        editElem = document.querySelector('.edit'),
+        editContainer = document.querySelector('.edit-container'),
+        editUsername = document.querySelector('.edit-username'),
+        editPhotoURL = document.querySelector('.edit-photo'),
+        userAvatarElem = document.querySelector('.user-avatar'),
+        postsWrapper = document.querySelector('.posts'),
+        buttonNewPost = document.querySelector('.button-new-post'),
+        addPostElem = document.querySelector('.add-post'),
+        DEFAULT_PHOTO = userAvatarElem.src;
+
+    const setUsers = {
+        user: null,
+        initUser(handler) {
+            firebase.auth().onAuthStateChanged(user => {
+                if (user) {
+                    this.user = user;
+                } else {
+                    this.user = null;
+                }
+                if (handler) handler();
+            })
+        },
+        logIn(email, password, handler) {
+            if (!regExpValidEmail.test(email)) return alert('Введите корректный email'); //если имейл не валидный
+
+            firebase.auth().signInWithEmailAndPassword(email, password)
+                .catch(err => {
+                    const errCode = err.code;
+                    const errMessage = err.message;
+                    if (errCode === 'auth/wrong-password') {
+                        console.log(errMessage);
+                        alert('Neverniy parol')
+
+                    } else if (errCode === 'auth/user-not-found') {
+                        console.log(errMessage)
+                        alert('Polzovatelne nayden')
+                    } else {
+                        alert(errMessage)
+                    }
+                    console.log(err);
+                })
+
+            // const user = this.getUser(email);
+            // if (user && user.password === password) { //проверяем пароль введённый при регистрации
+            //     this.authorizedUser(user);
+            //     handler();
+            // } else {
+            //     alert('Polzovatel ne nayden')
+            // }
+        },
+        logOut() {
+            firebase.auth().signOut();
+
+        },
+        signUp(email, password, handler) { //регистрация
+            if (!regExpValidEmail.test(email)) return alert('Введите корректный email'); //если имейл не валидный
+            if (!email.trim() || !password.trim()) { //защита от пустых данных в поле инпутов
+                alert('Введите данные!')
+                return;
+            }
+            firebase.auth().createUserWithEmailAndPassword(email, password)
+                .then(data => {
+                    this.editUser(email.substring(0, email.indexOf('@')), null, handler);
+                })
+                .catch(err => {
+                    const errCode = err.code;
+                    const errMessage = err.message;
+                    if (errCode === 'auth/weak-password') {
+                        console.log(errMessage);
+                        alert('Slabiy parol')
+
+                    } else if (errCode === 'auth/email-already-in-use') {
+                        console.log(errMessage)
+                        alert('Polzovatel s takim email uzhe ispolzovan')
+                    } else {
+                        alert(errMessage)
+                    }
+                    console.log(errMessage)
+                });
+            // if (!this.getUser(email)) { //принимаем введённый email и запускаем функцию проверки, функция вернёт тру или фолс
+            //     const user = {email, password, displayName: email.substring(0, email.indexOf('@'))};
+            //     listUsers.push({email, password, displayName: email}); //если фолс, то пушим в массив
+            //     this.authorizedUser(user);
+            //     handler();
+            // } else {
+            //     alert('Пользователь с таким email зареган!') //если тру, то выводим сообщение
+            // }
+        },
+        editUser(displayName, photoURL, handler) {
+
+            const user = firebase.auth().currentUser;
+
+            if (displayName) {
+                if (photoURL) {
+                    user.updateProfile({
+                        displayName,
+                        photoURL
+                    }).then(handler);
+                } else {
+                    user.updateProfile({
+                        displayName
+                    }).then(handler);
+                }
+            }
+        },
+        // getUser(email) {
+        //     return listUsers.find((item) => { //ищем соспадение по имейлу у юзеров записанных в массив listUsers
+        //         return item.email === email; //возвращает true, при совпадении
+        //     })
+        // },
+        // authorizedUser(user) {
+        //     this.user = user;
+        //
+        // }
+        sendForget(email) {
+            firebase.auth().sendPasswordResetEmail(email)
+                .then(() => {
+                    alert('Pismo otpravleno!')
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
+    }
+    //Забытый пароль
+    const loginForget = document.querySelector('.login-forget');
+    loginForget.addEventListener('click', event => {
+        event.preventDefault();
+        setUsers.sendForget(emailInput.value);
+    })
+
+
+    const setPosts = {
+        allPosts: [],
+        addPost(title, text, tags, handler) {
+            this.allPosts.unshift({
+                id: `$postID${(+new Date()).toString(16)}`,
+                title,
+                text,
+                tags: tags.split(',').map(item => item.trim()),
+                author: {
+                    displayName: setUsers.user.displayName,
+                    photo: setUsers.user.photoURL,
+                },
+                like: 0,
+                comments: 0,
+                date: new Date().toLocaleString()
+            });
+            // if(handler) {
+            //     handler();
+            // };
+            firebase.database().ref('post').set(this.allPosts)
+                .then(() => this.getPosts(handler))
+        },
+        getPosts(handler) {
+            firebase.database().ref('post').on('value', snapshot => {
+                this.allPosts = snapshot.val() || [];
+                handler();
+            })
+        }
+    }
+
+    const toggleAuthDom = () => {
+        const user = setUsers.user;
+        if (user) {
+            loginElem.style.display = 'none';
+            userElem.style.display = '';
+            userNameElem.textContent = user.displayName;
+            userAvatarElem.src = user.photoURL || DEFAULT_PHOTO;
+            buttonNewPost.classList.add('visible');
+        } else {
+            loginElem.style.display = '';
+            userElem.style.display = 'none';
+            buttonNewPost.classList.remove('visible');
+            addPostElem.classList.remove('visible');
+            postsWrapper.classList.add('visible');
+        }
+    };
+    const showAddPost = () => {
+        addPostElem.classList.add('visible');
+        postsWrapper.classList.remove('visible');
+    }
+
+
+    const showAllPosts = () => {
+
+        addPostElem.classList.remove('visible');
+        postsWrapper.classList.add('visible');
+
+        let postsHTML = '';
+        setPosts.allPosts.forEach((item) => {
+
+            const {title, text, date, tags, like, comments, author} = item; //деструктуризация, достаём из item его свойства и присваиваем переменным с таким же именем
+
+            postsHTML += `
+                <section class="post">
+            <div class="post-body">
+                <h2 class="post-title">${title}</h2>
+                <p class="post-text">${text}</p>
+                <div class="tags">
+                ${tags.map(tag => `<a href="#" class="tag">#${tag}</a>`)}
+
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+                <div class="post-author">
+                    <div class="author-about">
+                        <a href="#" class="author-username">${author.displayName}</a>
+                        <span class="post-time">${date}</span>
+                    </div>
+                    <a href="#" class="author-link"><img src="${author.photo || 'img/avatar.jpeg'} " alt="avatar" class="author-avatar"></a>
+                </div>
+
+            </div>
+
+        </section>
+            `
+        })
+        postsWrapper.innerHTML = postsHTML;
+
+    }
+
+
+    const init = () => {
+        //Обработчики событий
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const emailValue = emailInput.value;
+            const passwordValue = passwordInput.value;
+            setUsers.logIn(emailValue, passwordValue, toggleAuthDom);
+            loginForm.reset();
+        });
+        loginSignup.addEventListener('click', (event) => {
+            event.preventDefault();
+            const emailValue = emailInput.value;
+            const passwordValue = passwordInput.value;
+            setUsers.signUp(emailValue, passwordValue, toggleAuthDom);
+            loginForm.reset();
+        });
+
+        exitElem.addEventListener('click', () => {
+            event.preventDefault();
+            setUsers.logOut();
+        })
+
+        editElem.addEventListener('click', event => {
+            event.preventDefault();
+            editContainer.classList.toggle('visible');
+            editUsername.value = setUsers.user.displayName;
+        });
+        editContainer.addEventListener('submit', event => {
+            event.preventDefault();
+            setUsers.editUser(editUsername.value, editPhotoURL.value, toggleAuthDom);
+            editContainer.classList.remove('visible')
+        });
+        buttonNewPost.addEventListener('click', event => {
+            event.preventDefault();
+            showAddPost();
+        });
+        addPostElem.addEventListener('submit', event => {
+            event.preventDefault();
+            const {title, text, tags} = addPostElem.elements; //Деструктуризация
+            if (title.value.length < 6) {
+                alert('Slishkom kotokiy zagolovok');
+                return;
+            }
+            if (text.value.length < 50) {
+                alert('Slishkom kotokiy post');
+                return;
+            }
+            setPosts.addPost(title.value, text.value, tags.value, showAllPosts);
+            addPostElem.classList.remove('visible');
+            addPostElem.reset();
+
+        });
+        //Вызовы функций
+        setUsers.initUser(toggleAuthDom);
+        toggleAuthDom();
+        setPosts.getPosts(showAllPosts);
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        init();
+    });
+
+
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+

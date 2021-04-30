@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tickets</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section>
+	<div class="container header">
+		<h1 class="header__h1">Дешёвые авиабилеты</h1>
+		<div class="day-night">
+			<svg id="dark_mode" width="55" height="55" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg">
+				<path class="moon" d="M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z" fill="#fee140"/>
+			</svg>
+		</div>
+	</div>
+
+
+</section>
+
+
+<section class="content">
+	<div class="container">
+		<section class="wrapper">
+			<form class="form-search">
+				<div class="wrapper__search">
+					<div class="input" style="display: block;">
+						<label>
+							<input type="text" class="input__cities-from" placeholder="Откуда" required>
+						</label>
+						<ul class="dropdown dropdown__cities-from">
+
+						</ul>
+					</div>
+
+					<div class="input">
+						<label>
+							<input type="text" class="input__cities-to" placeholder="Куда" required>
+						</label>
+						<ul class="dropdown dropdown__cities-to">
+
+						</ul>
+					</div>
+
+					<div class="input input__cities-from">
+						<label>
+							<input type="date" class="input__date-depart" required>
+						</label>
+					</div>
+				</div>
+
+				<div class="wrapper__button">
+					<button type="submit" class="button button__search">
+						<span class="button__search-text">Найти билеты</span>
+					</button>
+				</div>
+			</form>
+		</section>
+		<section class="wrapper">
+			<h2 class="ticket__h2">Самый дешевый билет на выбранную дату</h2>
+			<section class="wrapper__ticket" id="cheapest-ticket">
+
+
+			</section>
+			<h2 class="ticket__h2">Самые дешевые билеты на другие даты</h2>
+			<section class="block__ticket" id="other-cheap-tickets">
+
+			</section>
+		</section>
+	</div>
+</section>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+	const moonPath = "M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 52.101 13.21 55 20.209 55 27.5 C 55 34.791 52.101 41.79 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z";
+	const sunPath = "M 27.5 0 C 34.791 0 41.79 2.899 46.945 8.055 C 33.991 9.89 26.93 20.209 26.93 27.5 C 26.93 34.791 33.689 45.261 46.945 46.945 C 41.79 52.101 34.791 55 27.5 55 C 20.209 55 13.21 52.101 8.055 46.945 C 2.899 41.79 0 34.791 0 27.5 C 0 20.209 2.899 13.21 8.055 8.055 C 13.21 2.899 20.209 0 27.5 0 Z";
+	const darkMode = document.querySelector("#dark_mode");
+	let toggle = false;
+	darkMode.addEventListener("click", ()=>{
+		//anime.js
+		const timeline = anime.timeline({
+			duration : 750,
+			easing : "easeOutExpo"
+		});
+		//add
+		timeline
+				.add({
+					targets:".moon",
+					d:[{value: toggle ? moonPath: sunPath}] //moonPath ->sunpath
+				})
+				.add({
+					targets:'#dark_mode',
+					rotate : toggle? 0 : 320
+				},"-=350")
+				.add({
+					targets: "section",
+					backgroundColor: toggle ? 'rgba(255,255,255)' : 'rgba(22,22,22)',
+					color: toggle ? 'rgba(22,22,22)' : 'rgba(255,255,255)'
+				},"-=700");
+
+		if(!toggle){
+			toggle = true;
+			$("h1").text("darkmode");
+
+		}else{
+			toggle= false;
+			$("h1").text("lightmode");
+		}
+
+	});
+
+
+
+	const submitBtn = document.querySelector('.button.button__search'),
+			contentClass = document.querySelector('section.content');
+	submitBtn.addEventListener('click', () => {
+		setTimeout(()=> {
+			let ticket = document.querySelector('.ticket');
+			if(ticket) {
+				contentClass.classList.add('open');
+			}
+		},1000)
+	})
+
+</script>
+</body>
+
+</html>

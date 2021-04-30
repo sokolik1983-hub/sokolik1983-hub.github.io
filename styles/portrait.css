@@ -1,0 +1,108 @@
+.wrapper {
+    background-color: black;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.frame {
+    border-radius: 50% ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba(0,0,0, 0.7);
+    background: url("../img/stars.png");
+    background-size: 100%;
+    transition: 1s;
+
+}
+.icons {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    pointer-events: none;
+}
+.silhoette {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.html {
+    left: 30px;
+    top: 30px;
+    transform: scale(0.1);
+    transition: .7s;
+}
+.js {
+    left: 15px;
+    top: 45px;
+    transform: scale(0.1);
+    transition: 1s;
+}
+.css {
+    top: 10px;
+    right: 50px;
+    transform: scale(0.1);
+    transition: .7s;
+}
+.react {
+    top: 40px;
+    left: 330px;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+.wrapper:hover .frame,
+.wrapper.hover .frame {
+    background-position: -20% 80%;
+}
+
+
+.wrapper:hover .html,
+.wrapper.hover .html {
+    transform: translate(50px, 50px) rotate(-10deg) scale(0.8);
+}
+.wrapper:hover .js,
+.wrapper.hover .js {
+    transform: translate(20px, 80px) rotate(-30deg) scale(1);
+}
+.wrapper:hover .react,
+.wrapper.hover .react {
+    transform: translate(-20px, 60px) rotate(-30deg) scale(1);
+}
+.wrapper:hover .css,
+.wrapper.hover .css {
+    transform: translate(-20px, 30px) rotate(-30deg) scale(.8);
+}
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 280px;
+        height: 280px;
+    }
+    .social-box {
+        padding: 30px 10px;
+    }
+    .social-box svg {
+        width: 35px;
+        height: 35px;
+    }
+    .wrapper:hover .html,
+    .wrapper.hover .html {
+        transform: translate(5px, 30px) rotate(-10deg) scale(0.6);
+    }
+    .wrapper:hover .css,
+    .wrapper.hover .css {
+        transform: translate(10px, 30px) rotate(-30deg) scale(.7);
+    }
+    .wrapper:hover .react,
+    .wrapper.hover .react {
+        transform: translate(-120px, 70px) rotate(-30deg) scale(.7);
+    }
+}

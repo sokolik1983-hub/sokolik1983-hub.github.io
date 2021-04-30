@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    height: ;
+}
+h1, h2, p, a, li {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+input {
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    color: #949494;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-right: none;
+}
+.header__h1 {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.ticket__h2 {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.input {
+    width: 33.33%;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper__search, .form-search {
+    display: flex;
+}
+.wrapper__search {
+    width: 50%;
+}
+.form-search {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.button.button__search {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    cursor: pointer;
+}
+section.content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+section.content.open {
+    height: 100%;
+}
+.dropdown {
+    position: absolute;
+    background: #fff;
+    width: 150px;
+    overflow: hidden;
+
+}
+.dropdown li {
+    padding: 5px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    color: #232323;
+}
+.dropdown li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+.dropdown li:hover {
+    background-color: #ccc;
+}
+.ticket {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.ticket .agent {
+    font-family: Montserrat, sans-serif;
+    padding-bottom: 15px;
+}
+.right-side .city__from,
+.right-side .city__name,
+.right-side .date,
+.right-side .changes,
+.right-side .city__to,
+.button__buy {
+    font-family: Montserrat, sans-serif;
+    padding-bottom: 10px;
+}
+.button__buy {
+    display: block;
+}
+@media (max-width: 768px) {
+    .ticket__wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+    .form-search {
+        flex-direction: column;
+    }
+    .wrapper__search {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .input {
+        width: 100%;
+        margin-bottom: 20px;
+        border-right: 1px solid #ccc;
+    }
+    .button.button__search {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .right-side {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .left-side {
+        min-width: 100%;
+    }
+
+    .block-right, .block-left {
+        width: 100%;
+    }
+
+    .block-left {
+        margin-bottom: 20px;
+    }
+
+}
+*{box-sizing: border-box}
+a{text-decoration: none}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+legend{display: none}
+
+#dark_mode{width:100px;height:100px}
+#light_mode{width:28px;height:55px}
+section, main {
+    background:rgba(255,255,255, 1)
+}
+svg{cursor:pointer;}

@@ -1,0 +1,445 @@
+@font-face {
+    font-family: Stalin;
+    src: url(../fonts/stalin-one-regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    overflow:  hidden;
+    font-size: 20px;
+}
+ul {
+    list-style: none;
+}
+
+.main-menu {
+    position: absolute;
+    bottom: 10%;
+}
+.back-link p {
+    position: absolute;
+    bottom: 10%;
+    z-index: 99;
+    font-family: "Stalin", sans-serif;
+}
+.back-link:hover {
+    color: #fff;
+}
+.print {
+    z-index: 99;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+.print a {
+    white-space: nowrap;
+}
+
+.main-menu li {
+    cursor: pointer;
+    padding-top: 5px;
+}
+.main-menu li:hover .icon2 {
+    border: 4px solid #9B0707;
+    color: #9B0707;
+    transform: rotate(360deg);
+}
+.main-menu li:hover p {
+    color: #fff;
+}
+.main-menu li p, .back-link {
+    color: #9B0707;
+    font-size: 1.8rem;
+    font-family: "Stalin", sans-serif;
+    transition: .5s;
+    text-shadow: 1px 1px 1px rgba(155,7,7,0), 0 0 25px rgba(0,0,0,1), 0 0 25px rgba(0,0,0,1);
+}
+.content  {
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(35, 35, 35, .7);
+    position: absolute;
+    padding: 40px;
+}
+.content__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content__info {
+    width: 50%;
+}
+.social-box {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-box svg {
+    width: 50px;
+    height: 50px;
+}
+.linkedin {
+    fill: #fff;
+}
+.content__info {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 20px;
+}
+.content__info {
+    font-size: 0.7rem;
+}
+.content__info h2 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.social-box a {
+    transition: .3s;
+}
+.social-box a:hover {
+    opacity: .8;
+}
+.d-none {
+    display: none;
+}
+.js-projects ul {
+    display: flex;
+}
+.js-projects ul li {
+    color: #fff;
+    font-family:  "Montserrat", sans-serif;
+    padding: 0 20px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.js-projects ul li.active {
+    border-right: 1px solid #fff;
+    border-bottom: 5px solid red;
+}
+.js-projects__cont {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+/*Стили для табов*/
+.tabs {
+    display: flex;
+    position: relative;
+}
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: red;
+    transition: all 0.2s ease;
+}
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-color: rgba(255, 0, 0, 0.1);
+}
+.tab-item.active {
+    opacity: 1;
+    border-bottom: 5px solid red;
+}
+.tab-content {
+    padding: 28px 0;
+}
+.tab-pane {
+    color: #333;
+    display: none;
+
+}
+.tab-pane.active {
+    display: block;
+}
+.tab-pane__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.tab-content__info {
+    color: #fff;
+    max-width: 50%;
+}
+.tab-content__btn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.tab-content__btn a {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #9B0707;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 101;
+    background-color: #9B0707;
+    display: flex;
+    align-items: center;
+}
+.tab-content__btn a:hover {
+    background-color: transparent;
+}
+.tab-content__btn a svg {
+    width: 10px;
+}
+.tab-content__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tab-content__img img {
+    width: 500px;
+    height: auto;
+}
+.tab-content__btn-git {
+    margin-left: 20px;
+}
+/*Конец стили для табов*/
+.content__info p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+.content__info h3 {
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.content__info li {
+    padding-bottom: 3px;
+}
+.about-project {
+    display: block!important;
+    list-style: circle;
+}
+.about-project li {
+    border: none!important;
+    padding-bottom: 10px!important;
+}
+.tab-content__info p {
+    padding-bottom: 15px;
+}
+@media screen and (max-width: 1200px) {
+    .main-menu li p, .back-link {
+        font-size: 1.3rem;
+    }
+    .content {
+        overflow: scroll;
+    }
+    .content__about {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        overflow: scroll;
+    }
+    .content__info {
+        width: 100%;
+    }
+    .content__img-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .social-box {
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-box__link {
+        padding: 10px;
+    }
+    .tab-pane__wrap {
+        flex-direction: column-reverse;
+    }
+    .tab-content__info {
+        max-width: 100%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tab-content__btn {
+        margin-bottom: 30px;
+    }
+    .tab-content__img img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .content__about {
+        flex-direction: row;
+        justify-content: flex-end;
+        overflow: scroll;
+        position: relative;
+    }
+    .print {
+        bottom: 2%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .main-menu, .back-link p {
+        bottom: 6%;
+    }
+    .main-menu li {
+        text-align: center;
+    }
+    .content {
+        padding: 5px;
+    }
+    .content__info, .content__img {
+        position: absolute;
+    }
+    .content__img {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .content__img-wrap {
+        display: block;
+    }
+    .content__img-wrap .wrapper {
+        margin: 0 auto;
+    }
+    .social-box {
+        width: 100%;
+    }
+    .social-box__link {
+        padding: 5px;
+    }
+    .tab-item {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .tab-item, .tab-content__btn a {
+        font-size: 12px;
+    }
+}
+.my-works {
+    position: relative;
+    height: 100%;
+    padding:50px;
+}
+
+.my-works {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: top;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+.swiper-container-free-mode>.swiper-wrapper {
+    margin: 10px auto 0!important;
+}
+.swiper__link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #9B0707;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 101;
+    background-color: #9B0707;
+    display: flex;
+    align-items: center;
+}
+.swiper__link:hover {
+    background-color: #fff;
+    color: #9B0707;
+}
+.op-0 {
+    opacity: 0;
+}
+.gallery-thumbs .swiper-slide {
+    cursor: pointer;
+}
+.gallery-thumbs .swiper-slide:hover {
+    opacity: 1;
+}
