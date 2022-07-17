@@ -21,7 +21,7 @@
         <p data-value="3" class="icon-text2">Native JS</p>
     </li>
     <li >
-        <p data-value="4">Мои сайты</p>
+        <p data-value="4" class="d-none">Мои сайты</p>
     </li>
 </ul>
 <a href="#" class="back-link">
@@ -53,20 +53,23 @@
         <div class="content__info">
             <h2>Обо мне</h2>
             <p>Здравствуйте. Меня зовут Алексей и я front-end разработчик.</p>
-            <p>Я уже 2 года занимаюсь Web разработкой, сначала это была просто вёрстка
-                и многочисленные макеты из Фигмы и Фотошопа, около года назад начал
-                изучать JavaScript и написал несколько проектов (с ними вы можете
-                ознакомиться в разделе "Native JS"). Также сделал несколько многостраничных сайтов (вы можете их посмотреть в разделе "Мои сайты") Сейчас занимаюсь изучением React и пишу
-                проект. В дальнейшем планирую развиваться в сфере IT-технологий.</p>
+            <p>В данный момент я работаю над большим проектом, написанным на React и предназначенным для кинологических федераций и питомников <a target="_blank" href="https://rkf.online/">РКФ-Онлайн</a>.
+                Это большой проект, который представляет собой смесь "соц.сеть + госуслуги".
+                Моя задача как исправление багов, так и разработка фич.
+                Очень много работы с коллегами с бэка.
+                Работа с реакт-библиотеками Material UI, Kendo, Styled Components, Formik, React-Dropzone, React-Slick, Swiper, Redux, Redux-Saga.
+                Каждодневная работа с Git и GitLab.
+                Опыт работы с таск-менеджером Redmine.</p>
             <h3>Мои навыки</h3>
             <ul>
+                <li>React/Redux</li>
                 <li>JavaScript (ES6)</li>
-                <li>React/Redux (базовый)</li>
-                <li>HTML/ CSS</li>
+                <li>SCSS</li>
+                <li>REST API</li>
+                <li>Git</li>
+                <li>GitHub/GitLab</li>
                 <li>Yarn/NPM</li>
-                <li>PHP(базовый)</li>
-                <li>jQuery</li>
-                <li>Bitrix/Wordpress/Joomla</li>
+                <li>Таск-менеджер Redmine</li>
             </ul>
         </div>
         <div class="content__img">
@@ -352,45 +355,45 @@
     </div>
     <div class="react-projects d-none"></div>
     <div class="my-works">
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper my-swiper">
-                    <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)">
-                        <a href="https://activ-hall.ru/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)">
-                        <a href="https://peli-can.com/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)">
-                        <a href="https://phcn.ru/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)">
-                        <a href="https://gp175.ru/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)">
-                        <a href="https://marcandre.com/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)">
-                        <a href="http://www.primapharm.ru/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)">
-                        <a href="http://bukmeker-info.ru/" target="_blank" class="swiper__link">Смотреть</a>
-                    </div>
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper my-swiper">
+                <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)">
+                    <a href="https://activ-hall.ru/" target="_blank" class="swiper__link">Смотреть</a>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
-            </div>
-            <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)"></div>
-                    <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)">
+                    <a href="https://peli-can.com/" target="_blank" class="swiper__link">Смотреть</a>
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)">
+                    <a href="https://phcn.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)">
+                    <a href="https://gp175.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)">
+                    <a href="https://marcandre.com/" target="_blank" class="swiper__link">Смотреть</a>
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)">
+                    <a href="http://www.primapharm.ru/" target="_blank" class="swiper__link">Смотреть</a>
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)">
+                    <a href="http://bukmeker-info.ru/" target="_blank" class="swiper__link">Смотреть</a>
                 </div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(/img/active-hall.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/peli-can.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/phcn.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/gp175.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/marcandre.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/primapharm.JPG)"></div>
+                <div class="swiper-slide" style="background-image:url(/img/bukmeker-info.JPG)"></div>
+            </div>
+        </div>
     </div>
 </div>
 
